@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content {
+            /* text-align: center; */
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+
+        .sub-content,
+        .list {
+            padding-top: 50px;
+        }
+        iframe{
+            height:600px
+        }
+
+        .main,
+        .main2,
+        .main3 {
+            width: 90%;
+        }
+
+        .main h1 {
+            font-size: 54px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .main p,
+        .main3 p {
+            font-size: 22px;
+            line-height: 34px;
+        }
+
+        .main2 h2 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .main2 span {
+            font-size: 28px;
+            color: black;
+        }
+
+        .sub-content ol li {
+            line-height: 34px;
+            font-size: 22px;
+            padding-top: 20px;
+        }
+
+        .main3 h3 {
+            font-weight: bold;
+            font-size: 42px;
+        }
+
+        .list ol li {
+            line-height: 34px;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .buy {
+            width: 150px;
+            height: 40px;
+            background-color: sienna;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .buy:hover {
+            background-color: rgba(160, 81, 45, 0.725);
+        }
+        .logo{
+            height: 80px;
+            width: 150px;
+            /* border: 2px solid black; */
+            background: url(../images/PICNIC_GAMES-removebg-preview.png);
+            /* font-weight: 6000px; */
+            background-size: cover;
+            background-position:center;
+            display: flex;
+        }
+        .nav-item .nav-link {
+            color: rgba(104, 66, 37, 0.959);
+            font-size: large;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        body {
+      background-color: rgba(110, 76, 50, 0.589);
+    }
+    @media screen and (max-width:1024px){
+        .nav-item .nav-link {
+      margin-left: 10px;
+      }
+    }
+    @media screen and (max-width:768px){
+        .main h1 {
+            font-size: 36px;
+        }
+        .main p,
+        .main3 p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .list ol li {
+            line-height: 30px;
+            font-size: 18px;
+            padding-top: 16px;
+        }
+        .main2 h2 {
+            font-size: 32px;
+        }
+        .main2 span {
+            font-size: 22px;
+            color: black;
+        }
+        .sub-content ol li {
+            line-height: 30px;
+            font-size: 18px;
+            padding-top: 16px;
+        }
+        .main3 h3 {
+            font-size: 32px;
+        }
+
+        .buy {
+            width: 120px;
+            height: 36px;
+            background-color: sienna;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        iframe{
+            height:300px
+        }
+    }
+    </style>
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg" style="background-color:rgba(121, 81, 50, 0.253)">
+        <div class="container-fluid">
+            <div class="logo"></div>
+            <!-- <span class="logo"><img src="../images/PICNIC_GAMES-removebg-preview.png" alt=""></span> -->
+            <a class="navbar-brand" href=""> <br></a><br><br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/about us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/contact us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/outdoor games/males games.html">Male Games</a></li>
+                            <li><a class="dropdown-item" href="/outdoor games/female games.html">Females Games</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/outdoor games/kids games.html">Kids
+                                    Games</a></li>
+                            <li><a class="dropdown-item" href="/outdoor games/family games.html ">Family Games</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="/indoor.html">Indoor Games</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- female Games4 -->
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-12 content">
+                <h1>Football</h1>
+                <p>It seems like you're asking for content related to kickball. Depending on what you're looking for,
+                    here are a few suggestions for different types of content related to the game:</p>
+            </div>
+        </div>
+    </div>
+    <div class="container main1">
+        <div class="row">
+            <iframe width="100%" src="https://www.youtube.com/embed/LZINxRSIVnI?si=8uGDedr1INK6cGTl"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    </div>
+    <div class="container-fluid main2">
+        <div class="row">
+            <div class="col-12 sub-content">
+                <h2>How to Play Football:</h2>
+                <ol>
+                    <li>
+                        <span style="font-weight: bold;">Understand the Basics: </span>The goal of football is to score
+                        more goals than your opponent by getting the ball into the other team's net.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Know the Field: </span>The larger box where the goalkeeper can
+                        handle the ball and where fouls are punished by a penalty kick.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Learn the Basic Rules: </span>A player is offside if they are
+                        nearer to the opponent's goal than both the ball and the second-last defender when the ball is
+                        passed to them.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Positions on the Field: </span>Players who help protect the goal
+                        from attacks, usually positioned near the goal.Players who control the play, passing the ball,
+                        and helping both in attack and
+
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;"> Master Basic Skills: </span>Kicking the ball to a teammate. This
+                        can be done with the inside, outside, or instep of your foot.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main3">
+        <div class="row">
+            <div class="col-12 list">
+                <h3>Equipment Required for Football</h3>
+                <p>Playing football (soccer) can be both fun and challenging. To get started, here’s a guide on how to
+                    play the gameBy practicing these basic skills, understanding the rules, and playing regularly,
+                    you'll get better at football over time. Most importantly, have fun!</p>
+                <ol>
+                    <li>
+                        <span style="font-weight: bold;"> Football </span>(Soccer Ball)
+
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Shin Guards</span>
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Cleats</span> (Football Boots)
+
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Football Socks </span>
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Goalkeeper Equipment</span>
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Jersey and Shorts</span>
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Training Equipment </span>
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;"> Protective Gear</span>
+                    </li>
+                </ol>
+                <a href="#"><button class="buy">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+     <!-- Footer -->
+  <footer style="background-color: rgba(223, 199, 187, 0.87); color: #ecf0f1; padding: 40px 0; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+      <!-- Navbar Links -->
+      <nav>
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+          <li><a href="/index.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Home</a></li>
+          <li><a href="/about us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">About</a></li>
+          <li><a href="/contact us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Email Subscription -->
+      <div style="margin-top: 20px;">
+        <input type="email" placeholder="Subscribe for updates..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
+        <button style="padding: 10px 15px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div style="margin-top: 20px;">
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+  
+      
+    </div>
+  </footer>
+<!-- Footer end     -->
+</body>
+
+</html>

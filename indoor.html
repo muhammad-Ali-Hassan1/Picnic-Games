@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="" href="images/PICNIC GAMES.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Picnic Games</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            background-color: rgba(110, 76, 50, 0.589);
+            /* background-image: url(./images/Grass_Background_Texture-680.jpg); */
+        }
+
+        .contianer {
+            height: auto;
+        }
+
+        .nav-link {
+            color: aliceblue;
+        }
+        .baners{
+            margin: 20px;
+        }
+        .baners h5{
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .baners p{
+            font-size: 18px;
+        }
+
+        .card-img {
+            height: 300px;
+        }
+
+        .cards {
+            padding: 10px;
+            background-color: rgba(104, 66, 37, 0.493);
+        }
+
+        .cards:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 10px 20px 10px rgba(43, 19, 1, 0.945);
+        }
+
+        .cards:hover img {
+            filter: grayscale(0);
+        }
+
+        .cards.reflection {
+            transition: all.1s ease;
+            opacity: 0;
+            mix-blend-mode: soft-light;
+        }
+
+        .cards img {
+            filter: grayscale(.65);
+            transition: all.1s ease;
+        }
+
+        .nav-item .nav-link {
+            color: rgba(104, 66, 37, 0.959);
+            font-size: large;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        .logo {
+            height: 80px;
+            width: 150px;
+            /* border: 2px solid black; */
+            background: url(images/PICNIC_GAMES-removebg-preview.png);
+            /* font-weight: 6000px; */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+        }
+
+        .btn {
+            background-color: rgba(97, 75, 58, 0.726);
+            border: none;
+        }
+
+        .btn:hover {
+            transform: scale(1);
+            box-shadow: 0 10px 20px rgba(0, 0, .4);
+            background-color: rgba(104, 66, 37, 0.479);
+        }
+
+        .btn:hover img {
+            filter: grayscale(0);
+        }
+
+        .btn.reflection {
+            transition: all.1s ease;
+            opacity: 0;
+            mix-blend-mode: soft-light;
+        }
+
+        .btn img {
+            filter: grayscale(.65);
+            transition: all.1s ease;
+        }
+
+        .btn-img {
+            margin-top: 15px;
+        }
+        @media screen and (max-width:1024px){
+            .nav-item .nav-link {
+            margin-left: 10px;
+        }
+    }
+    @media screen and (max-width:768px){
+        .baners h5{
+            font-size: 24px;
+        }
+        .baners p{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:576px){
+        .baners h5{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .baners p{
+            font-size: 12px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(121, 81, 50, 0.253)">
+        <div class="container-fluid">
+            <div class="logo"></div>
+            <!-- <span class="logo"><img src="../images/PICNIC_GAMES-removebg-preview.png" alt=""></span> -->
+            <a class="navbar-brand" href=""> <br></a><br><br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./about us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./outdoor games/males games.html">Male Games</a></li>
+                            <li><a class="dropdown-item" href="./outdoor games/female games.html">Females Games</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./outdoor games/kids games.html">Kids
+                                    Games</a></li>
+                            <li><a class="dropdown-item" href="./outdoor games/family games.html ">Family Games</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="indoor.html">Indoor Games</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navebar end -->
+    <h1 style="text-align: center; font-family: cursive; font-weight: bolder; color: rgba(0, 0, 0, 0.87);"
+        class="mt-5 ">INDOOR GAMES</h1><br>
+    <div class=" container">
+        <div class="baners baner1">
+            <div class="cards card ">
+                <img src="./images/-8ri06u68v2.jpg" class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">SNOOKER GUYS</h5>
+                <p class="card-text">A snooker table is the most complicated to set up. The 15 reds should be placed
+                    into the
+                    triangle and positioned just behind the foot spot. In front of the triangle is placed the pink ball,
+                    and
+                    behind it, the black.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Snooker Guys (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/ArtsIdeas_JengaGiant_Lifestyle_Gameplay.jpg" class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">JENGA</h5>
+                <p class="card-text">Jenga is a game of physical skill created by British board game designer and author
+                    Leslie
+                    Scott and marketed by Hasbro. The name comes from the Swahili word "kujenga" which means 'to build
+                    or
+                    construct'.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Jenga (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/Finding-leadership-in-chess-1080x675.jpeg" class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">CHEES</h5>
+                <p class="card-text">Each of the 6 different kinds of pieces moves differently. Pieces cannot move
+                    through other pieces (though the knight can jump over other pieces), and can never move onto a
+                    square with one of their own pieces. However, they can be moved to take the place of an opponent's
+                    piece which is then captured.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Chees (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/b7c586ee5dc660a61c84dbd0992ecbe2.jpg  " class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">FOOSBALL</h5>
+                <p class="card-text">Foosball, also known as table football or table soccer, is a tabletop game that
+                    simulates football. The game is played by using rods with figures attached to move a ball into the
+                    opponent's goal. Here are some facts about foosball</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Foosball (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/Educational-Indoor-Activities-Family-baking.jpg " class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">COOKING</h5>
+                <p class="card-text">Cooking icon Julia Child once said, "The dinner hour is a sacred, happy time when
+                    everyone should be together and relaxed." For many of us, this meal has become more important than
+                    ever. In times of uncertainty.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Cooking (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/960x0.jpg " class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">POOL</h5>
+                <p class="card-text"> One player is “it” and stands at one wall of the pool. The rest of the players
+                    stand together at the
+                    opposite wall. The “it” player names a category and one person from the group collects a response
+                    from everyone and announces them.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Pool.html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card">
+                <img src="./images/Team-Building-Games.jpg " class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">TEAM BUILDING</h5>
+                <p class="card-text">The Paper Tower activity is an excellent team-building exercise that challenges
+                    small groups to construct the tallest free-standing tower using only paper. The challenge encourages
+                    participants to brainstorm ideas and strategise as a team, enhancing their problem-solving skills
+                    and teamwork.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Team Building (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/The-Wanderlust-Hostel-Game-night.jpg" class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">HAND FOOT BALL</h5>
+                <p class="card-text">Have some small activities like late night cooking sessions, eating together,
+                    studying in groups etc and while doing this live in the moment and cherish whatever you are getting
+                    because these are the only things which you will miss the most once you are out of that place. So
+                    these activities make you feel happy.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Hand Football.html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/143782ab7d1cffccebc0e2e4613dbdff.jpg " class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">TEAM BUILDING</h5>
+                <p class="card-text">The Paper Tower activity is an excellent team-building exercise that challenges
+                    small groups to construct the tallest free-standing tower using only paper. The challenge encourages
+                    participants to brainstorm ideas and strategise as a team, enhancing their problem-solving skills
+                    and teamwork.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Team Building (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/Playing-Cards-1024x674.png" class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">SPOON CARDS</h5>
+                <p class="card-text">The spoons card game can be played with 3 or more players, but is best played with
+                    3-4 players. If you play groups larger than 4, you should consider adding additional decks of cards
+                    so there are enough cards to go around between the player's hands and draw piles.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Spoon Cards.html" class="btn btn">Read more</a>
+            </div>
+        </div>
+        <div class="baners baner2">
+            <div class="cards card ">
+                <img src="./images/143782ab7d1cffccebc0e2e4613dbdff.jpg " class="card-img" alt="...">
+                <!-- <div class="card-img-overlay"> -->
+                <h5 class="card-title">TEAM BUILDING</h5>
+                <p class="card-text">The Paper Tower activity is an excellent team-building exercise that challenges
+                    small groups to construct the tallest free-standing tower using only paper. The challenge encourages
+                    participants to brainstorm ideas and strategise as a team, enhancing their problem-solving skills
+                    and teamwork.</p>
+                <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <a href="guide/Team Building (2).html" class="btn btn">Read more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer style="background-color: rgba(223, 199, 187, 0.87); color: #ecf0f1; padding: 40px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+          <!-- Navbar Links -->
+          <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+              <li><a href="index.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Home</a></li>
+              <li><a href="about us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">About</a></li>
+              <li><a href="contact us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Email Subscription -->
+          <div style="margin-top: 20px;">
+            <input type="email" placeholder="Subscribe for updates..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
+            <button style="padding: 10px 15px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div style="margin-top: 20px;">
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+      
+          
+        </div>
+      </footer>
+  <!-- Footer end     -->
+</body>
+
+</html>

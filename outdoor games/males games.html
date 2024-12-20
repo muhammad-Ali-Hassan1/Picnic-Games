@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="js/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    body {
+      background-color: rgba(110, 76, 50, 0.589);
+      /* background-image: url(./images/Grass_Background_Texture-680.jpg); */
+    }
+
+    .container {
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      /* margin-left: 190px; */
+    }
+
+    .col-md-3{
+      width: 290px;
+      height:500px;
+      margin: 10px;
+    }
+ .cards {
+      padding: 10px;
+      background-color: rgba(104, 66, 37, 0.493);
+      /* border: 2px solid black; */
+    }
+
+    .cards:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, .4);
+    }
+
+    .cards:hover img {
+      filter: grayscale(0);
+    }
+
+    .cards.reflection {
+      transition: all.1s ease;
+      opacity: 0;
+      mix-blend-mode: soft-light;
+    }
+    .col-md-3 h5{
+      font-size: 28px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .cards img {
+      filter: grayscale(.65);
+      transition: all.1s ease;
+    }
+
+    .kickball-img {
+      margin-top: 15px;
+    }
+
+    .card-text {
+      margin-top: 20px;
+    }
+    
+    .btn {
+      background-color: rgba(97, 75, 58, 0.726);
+      border: none;
+    }
+
+    .btn:hover {
+      transform: scale(1);
+      box-shadow: 0 10px 20px rgba(0, 0, .4);
+      background-color: rgba(104, 66, 37, 0.479);
+    }
+
+    .btn:hover img {
+      filter: grayscale(0);
+    }
+
+    .btn.reflection {
+      transition: all.1s ease;
+      opacity: 0;
+      mix-blend-mode: soft-light;
+    }
+
+    .btn img {
+      filter: grayscale(.65);
+      transition: all.1s ease;
+    }
+
+    .btn-img {
+      margin-top: 15px;
+    }
+
+    .nav-item .nav-link {
+            color: rgba(104, 66, 37, 0.959);
+            font-size: large;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        .logo {
+            height: 80px;
+            width: 150px;
+            /* border: 2px solid black; */
+            background: url(../images/PICNIC_GAMES-removebg-preview.png);
+            /* font-weight: 6000px; */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+        }
+        @media screen and (max-width:1024px){
+          .col-md-3{
+            width: 30%;
+          }
+          .nav-item .nav-link {
+      margin-left: 10px;
+      }
+        }
+    @media screen and (max-width:768px){
+      .col-md-3{
+      width: 45%;
+      height:420px;
+    }
+    .col-md-3 h5{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .col-md-3 p{
+      font-size: 14px;
+    }
+    .card-text {
+      margin-top: 6px;
+    }
+    }
+    @media screen and (max-width:576px){
+      .col-md-3{
+      width: 80%;
+      height:450px;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color:rgba(121, 81, 50, 0.253)">
+    <div class="container-fluid">
+        <div class="logo"></div>
+        <!-- <span class="logo"><img src="../images/PICNIC_GAMES-removebg-preview.png" alt=""></span> -->
+        <a class="navbar-brand" href=""> <br></a><br><br>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/contact us.html">Contact us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Games
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" href="/outdoor games/males games.html">Male Games</a></li>
+                        <li><a class="dropdown-item" href="/outdoor games/female games.html">Females Games</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/outdoor games/kids games.html">Kids
+                                Games</a></li>
+                        <li><a class="dropdown-item" href="/outdoor games/family games.html ">Family Games</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/indoor.html">Indoor Games</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- navbar end -->
+
+  <!-- navbar ended  -->
+  <h1 style="text-align: center; font-family: cursive; font-weight: bolder; color:rgba(104, 66, 37, 0.548);"
+    class="mt-5 ">GAMES FOR MALES</h1><br>
+  <div class=" container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-3 cards card1">
+        <img src="../images/istockphoto-472062243-612x612.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Three-legged race </h5>
+          <p class="card-text">A three-legged race is a running event involving pairs of participants running with the
+            left leg of one runner strapped to the right leg of another runner.[1] The objective is for the partners to
+            beat the other contestant pairs to the finish line.</p>
+          <a href="../guide/Three Legged Race.html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="col-md-3 cards card2">
+        <img src="../images/young-attractive-couple-playing-snooker-together-bar_522218-1046.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">snooker guys</h5>
+          <p class="card-text">A snooker table is the most complicated to set up. The 15 reds should be placed into the
+            triangle and positioned just behind the foot spot. In front of the triangle is placed the pink ball, and
+            behind it, the black.
+          </p><br>
+          <a href="../guide/Snooker Guys.html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="col-md-3 cards card3">
+        <img src="../images/download.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ring Toss</h5>
+          <p class="card-text">Ring toss is a game where rings are tossed around a peg. It is common at amusement
+            parks. A variant, sometimes referred to as "ring-a-bottle", replaces pegs with bottles, where the thrower
+            may keep the bottle (and its contents) if successful. </p>
+          <a href="../guide/Ring Toss (2).html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="cards card4 col-md-3">
+        <img src="../images/how-to-play-kickball.jpg" class="card-img-top Kickball-img" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Kickball</h5>
+          <p class="card-text">Kickball, originally called "Kicking Baseball", was claimed to have been invented as
+            early
+            as 1910 by Dr. Emmett Dunn Angell in his noted book Play: Comprising Games for the Kindergarten, Playground,
+            Schoolroom and College .</p>
+          <a href="../guide/Kick Ball.html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="cards card5 col-md-3">
+        <img src="../images/images (2).jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ladder Toss</h5>
+          <p class="card-text">To determine who goes first, flip a coin. The winner of the coin toss will then begin to
+            toss their bolas. The goal of the game is to throw each bola at your opponent's ladder rungs and have them
+            stick or wrap around the structure.
+          </p>
+          <a href="../guide/Ladder Toss.html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="cards card6 col-md-3">
+        <img src="../images/bolls.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Water Balloon Fight</h5>
+          <p class="card-text">Line up pairs facing one another at a minimal distance. Each time the water balloon is
+            successfully tossed and caught without bursting, one of the partners takes a step back. Play it round by
+            round, each team tossing the balloon at the same time.</p>
+          <a href="../guide/Water Ballon Fight (2).html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="cards card7 col-md-3">
+        <img src="../images/photo-1703000998518-021f436c0b03.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jenga</h5>
+          <p class="card-text">Jenga is a game of physical skill created by British board game designer and author
+            Leslie
+            Scott and marketed by Hasbro. The name comes from the Swahili word "kujenga" which means 'to build or
+            construct'.</p>
+          <a href="../guide/Jenga (2).html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+      <div class="cards card8 col-md-3">
+        <img src="../images/22510123_071ee1239b_b.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Table Tennis</h5>
+          <p class="card-text">Table tennis (also known as ping-pong or whiff-whaff) is a racket sport derived from
+            tennis
+            but distinguished by its playing surface being atop a stationary table, rather than the court on which
+            players
+            stand. Either individually or in teams of two.</p>
+          <a href="../guide/Table Tenis (2).html" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer style="background-color: rgba(223, 199, 187, 0.87); color: #ecf0f1; padding: 40px 0; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+      <!-- Navbar Links -->
+      <nav>
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+          <li><a href="/index.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Home</a></li>
+          <li><a href="/about us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">About</a></li>
+          <li><a href="/contact us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Email Subscription -->
+      <div style="margin-top: 20px;">
+        <input type="email" placeholder="Subscribe for updates..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
+        <button style="padding: 10px 15px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div style="margin-top: 20px;">
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+  
+      
+    </div>
+  </footer>
+<!-- Footer end     -->
+</body>
+
+</html>

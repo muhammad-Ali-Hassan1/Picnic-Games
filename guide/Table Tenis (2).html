@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content {
+            /* text-align: center; */
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+
+        .sub-content,
+        .list {
+            padding-top: 50px;
+        }
+        iframe{
+            height:600px
+        }
+
+        .main,
+        .main2,
+        .main3 {
+            width: 90%;
+        }
+
+        .main h1 {
+            font-size: 54px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .main p,
+        .main3 p {
+            font-size: 22px;
+            line-height: 34px;
+        }
+
+        .main2 h2 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .main2 span {
+            font-size: 28px;
+            color: black;
+        }
+
+        .sub-content ol li {
+            line-height: 34px;
+            font-size: 22px;
+            padding-top: 20px;
+        }
+
+        .main3 h3 {
+            font-weight: bold;
+            font-size: 42px;
+        }
+
+        .list ol li {
+            line-height: 34px;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .buy {
+            width: 150px;
+            height: 40px;
+            background-color: sienna;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .buy:hover {
+            background-color: rgba(160, 81, 45, 0.725);
+        }
+        .logo{
+            height: 80px;
+            width: 150px;
+            /* border: 2px solid black; */
+            background: url(../images/PICNIC_GAMES-removebg-preview.png);
+            /* font-weight: 6000px; */
+            background-size: cover;
+            background-position:center;
+            display: flex;
+        }
+        .nav-item .nav-link {
+            color: rgba(104, 66, 37, 0.959);
+            font-size: large;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        body {
+      background-color: rgba(110, 76, 50, 0.589);
+    }
+    @media screen and (max-width:1024px){
+        .nav-item .nav-link {
+      margin-left: 10px;
+      }
+    }
+    @media screen and (max-width:768px){
+        .main h1 {
+            font-size: 36px;
+        }
+        .main p,
+        .main3 p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .list ol li {
+            line-height: 30px;
+            font-size: 18px;
+            padding-top: 16px;
+        }
+        .main2 h2 {
+            font-size: 32px;
+        }
+        .main2 span {
+            font-size: 22px;
+            color: black;
+        }
+        .sub-content ol li {
+            line-height: 30px;
+            font-size: 18px;
+            padding-top: 16px;
+        }
+        .main3 h3 {
+            font-size: 32px;
+        }
+
+        .buy {
+            width: 120px;
+            height: 36px;
+            background-color: sienna;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        iframe{
+            height:300px
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(121, 81, 50, 0.253)">
+        <div class="container-fluid">
+            <div class="logo"></div>
+            <!-- <span class="logo"><img src="../images/PICNIC_GAMES-removebg-preview.png" alt=""></span> -->
+            <a class="navbar-brand" href=""> <br></a><br><br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/about us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/contact us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/outdoor games/males games.html">Male Games</a></li>
+                            <li><a class="dropdown-item" href="/outdoor games/female games.html">Females Games</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/outdoor games/kids games.html">Kids
+                                    Games</a></li>
+                            <li><a class="dropdown-item" href="/outdoor games/family games.html ">Family Games</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="/indoor.html">Indoor Games</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Male Games1 -->
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-12 content">
+                <h1>Table Tenis</h1>
+                <p>If you're looking for content related to table tennis, it could cover a range of topics, from basic
+                    rules to advanced techniques, history, or even tips for improving your game. Below is an overview of
+                    key areas you might want to explore or develop content around.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container main1">
+        <div class="row">
+            <iframe width="100%" src="https://www.youtube.com/embed/4Ks4fJTFTXU?si=zleWqqgSCUNtKZIf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="container-fluid main2">
+        <div class="row">
+            <div class="col-12 sub-content">
+                <h2>How to Play Table Tenis:</h2>
+                <ol>
+                    <li>
+                        <span style="font-weight: bold;"> Starting the Game:</span> The server must toss the ball into
+                        the air and hit it so that it first bounces on their side of the table and then crosses the net,
+                        landing on the opponent's side. After the first serve, the opponent must return the ball by
+                        hitting it with their racket before it bounces twice on their side.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;"> Rally:</span>Once the ball is served, the opponent must return
+                        the ball by hitting it back over the net before it bounces twice on their side. During the
+                        rally, players must take turns hitting the ball over the net. The ball must always land on the
+                        table on the opponent’s side.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;"> Scoring a Point: </span>A point is scored when the opponent
+                        fails to return the ball, hit the ball correctly, keep the ball from going out of bounds and let
+                        the ball bounce twice on their side of the table. For example, if your opponent misses the ball,
+                        hits it out of bounds, or lets it bounce twice, you earn a point.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;"> Winning the Game:</span>The game is won when a player reaches
+                        11 points, provided they lead by at least 2 points. If both players are tied at 10 points, the
+                        game continues until one player has a 2-point advantage (e.g., 12-10 or 13-11).
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;"> Changing Sides:</span>After each game, players change sides.
+                        If the match is being played to a third game (in a best-of-three format), players switch sides
+                        when one player reaches 5 points in the final game.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main3">
+        <div class="row">
+            <div class="col-12 list">
+                <h3>Equipment Required for Table Tennis</h3>
+                <p>Table tennis, also known as ping pong, is a fast-paced indoor sport played between two (singles) or
+                    four players (doubles). The game requires specific equipment to ensure a smooth, competitive game.
+                    Here’s a list of the essential equipment needed for playing table tennis:
+                </p>
+                <ol>
+                    <li>
+                        <span style="font-weight: bold;">Table Tennis Table</span> (standard 9x5 feet)
+
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Paddles (Rackets)</span> (wooden blade with rubber on both sides)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Table Tennis Balls</span>(40mm, white or orange)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Net and Posts</span>(6 feet long, 6 inches high)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Chalk</span>(optional for paddle grip)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Scoreboard </span>(manual or electronic, optional)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Table Tennis Gloves</span>(optional for grip)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Table Tennis Shoes</span>(optional, for better traction and movement)
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Training Aids</span> (optional, for practice like robots and rebound nets)
+                    </li>
+                </ol>
+                <a href="#"><button class="buy">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+  <footer style="background-color: rgba(223, 199, 187, 0.87); color: #ecf0f1; padding: 40px 0; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+      <!-- Navbar Links -->
+      <nav>
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+          <li><a href="/index.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Home</a></li>
+          <li><a href="/about us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">About</a></li>
+          <li><a href="/contact us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Email Subscription -->
+      <div style="margin-top: 20px;">
+        <input type="email" placeholder="Subscribe for updates..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
+        <button style="padding: 10px 15px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div style="margin-top: 20px;">
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+  
+      
+    </div>
+  </footer>
+<!-- Footer end     -->
+</body>
+
+</html>

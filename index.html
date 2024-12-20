@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="" href="images/PICNIC GAMES.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Picnic Games</title>
+  <style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    body {
+      background-color: rgba(110, 76, 50, 0.589);
+    }
+
+    .banner {
+      height: 60vh;
+      width: 100%;
+      background-image: url(./images/PICNIC_GAMES-removebg-preview.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0%;
+    }
+    .container{
+      background-color: rgba(121, 81, 50, 0.253);
+      height: auto;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container-fluid {
+      /* width: 99%; */
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      /* margin-left: 190px; */
+    }
+
+    .nav-item .nav-link {
+            color: rgba(104, 66, 37, 0.959);
+            font-size: large;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        .logo {
+            height: 80px;
+            width: 150px;
+            /* border: 2px solid black; */
+            background: url(images/PICNIC_GAMES-removebg-preview.png);
+            /* font-weight: 6000px; */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+        }
+
+    .cards {
+      padding: 10px;
+      background-color: rgba(104, 66, 37, 0.493);
+    }
+
+    .cards:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, .4);
+    }
+
+    .cards:hover img {
+      filter: grayscale(0);
+    }
+
+    .cards.reflection {
+      transition: all.1s ease;
+      opacity: 0;
+      mix-blend-mode: soft-light;
+    }
+
+    .cards img {
+      filter: grayscale(.65);
+      transition: all.1s ease;
+    }
+    .container h5{
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .container p{
+      font-size: 18px;
+    }
+
+    .kickball-img {
+      margin-top: 15px;
+    }
+
+    .footer {
+      width: 100;
+    }
+    @media screen and (max-width:1024px){
+    .nav-item .nav-link {
+      margin-left: 10px;
+      }
+      .container h5{
+      font-size: 30px;
+    }
+    .container p{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width:768px){
+    .container h5{
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+    .container p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width:576px){
+    .container h5{
+      font-size: 22px;
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+    .container p{
+      font-size: 12px;
+    }
+  }
+  
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg" style="background-color:rgba(121, 81, 50, 0.253)">
+    <div class="container-fluid">
+        <div class="logo"></div>
+        <!-- <span class="logo"><img src="../images/PICNIC_GAMES-removebg-preview.png" alt=""></span> -->
+        <a class="navbar-brand" href=""> <br></a><br><br>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="./contact us.html">Contact us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Games
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./outdoor games/males games.html">Male Games</a></li>
+                        <li><a class="dropdown-item" href="./outdoor games/female games.html">Females Games</a>
+                        </li>
+                        <li><a class="dropdown-item" href="./outdoor games/kids games.html">Kids
+                                Games</a></li>
+                        <li><a class="dropdown-item" href="./outdoor games/family games.html ">Family Games</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="./indoor.html">Indoor Games</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+  <!-- navebar end -->
+  <div class="banner">
+  </div>
+    <div class="container">
+      <div class="cards card-1 mb-3" style="max-width: 1500px;">
+        <div class="row g-9">
+          <div class="col-md-5">
+            <img src="./images/70058753-Children-playing-tug-of-war-children-s-birthday-party.jpg"
+              class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 d-flex align-items-center" id="tugofwar">
+            <div class="card-body">
+              <h5 class="card-title">KIDS GAMES</h5>
+              <p class="card-text">Tug of war (also known as tug o' war, tug war, rope war, rope pulling, or tugging
+                war)
+                is a sport that pits two teams against each other in a test of strength: teams pull on opposite ends of
+                a
+                rope, with the goal being to bring the rope a certain distance in one direction against the force of the
+                opposing team's pull.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards card-2 mb-3" style="max-width: 1500px;">
+        <div class="row g-9">
+          <div class="col-md-5">
+            <img src="./images/1.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">MALE GAMES</h5>
+              <p class="card-text">Beach volleyball is a team sport played by two teams of two players each on a sand
+                court divided by a net. Similar to indoor volleyball, the objective of the game is to send the ball over
+                the net and to ground it on the opponent's side of the court. Each team also works in unison to prevent
+                the opposing team from grounding the ball on their side of the court.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards card-3 mb-9" style="max-width: 1500px;">
+        <div class="row g-9">
+          <div class="col-md-5">
+            <img src="./images/2.jpg " class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">FEMALE GAMES</h5>
+              <p class="card-text">Cornhole (also known regionally as sack toss, or bags) is a lawn game popular in
+                North
+                America in which players or teams take turns throwing fabric bean bags at an inclined board with a hole
+                in
+                its far end. The goal of the game is to score points by either landing a bag on the board (one point) or
+                putting a bag through the hole (three points).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards card-4 mb-3" style="max-width: 1500px;">
+        <div class="row g-9">
+          <div class="col-md-5">
+            <img src="./images/3.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">FAMILY GAMES</h5>
+              <p class="card-text">Tag (also called chase, tig, it, tiggy, tips, tick, on-on and tip) is a playground
+                game
+                involving one or more players chasing other players in an attempt to "tag" and mark them out of play,
+                typically by touching with a hand. There are many variations; most forms have no teams, scores, or
+                equipment. Usually when a person is tagged, the tagger says, "It!" or "Tag, you're 'It'!" The last one
+                tagged during tag is "It" for the next round. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards card-9 mb-3" style="max-width: 1500px;">
+        <div class="row g-9">
+          <div class="col-md-5">
+            <img src="./images/3.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">INDOOR GAMES</h5>
+              <p class="card-text">Tag (also called chase, tig, it, tiggy, tips, tick, on-on and tip) is a playground
+                game
+                involving one or more players chasing other players in an attempt to "tag" and mark them out of play,
+                typically by touching with a hand. There are many variations; most forms have no teams, scores, or
+                equipment. Usually when a person is tagged, the tagger says, "It!" or "Tag, you're 'It'!" The last one
+                tagged during tag is "It" for the next round. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- Footer -->
+    <footer style="background-color: rgba(223, 199, 187, 0.87); color: #ecf0f1; padding: 40px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+          <!-- Navbar Links -->
+          <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+              <li><a href="index.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Home</a></li>
+              <li><a href="about us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">About</a></li>
+              <li><a href="contact us.html" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Email Subscription -->
+          <div style="margin-top: 20px;">
+            <input type="email" placeholder="Subscribe for updates..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
+            <button style="padding: 10px 15px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div style="margin-top: 20px;">
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+      
+          
+        </div>
+      </footer>
+  <!-- Footer end     -->
+      <script>
+        //login validation
+function validation(){
+    let name = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let passregex = /.{8,}/
+
+    if(name == "" || password == "" || !passregex.test(password)){
+            //Username error
+        if(name == ""){
+            document.getElementById("nameerror").innerText ="Must Enter your username";
+        }
+        else{
+            document.getElementById("nameerror").innerText = "";
+        }
+            //Password error
+    
+        if(password == ""){
+            document.getElementById("passerror").innerText = "Must Enter your password";
+        }
+        else{
+            if(passregex.test(password)){
+                document.getElementById("passerror").innerText = "";
+            }
+            else{
+                document.getElementById("passerror").innerText = "Password must be 8 or more characters";
+            }
+        }
+    }
+    else{
+        location.href = "index.html";
+    }
+}
+    </script>
+
+
+</body>
+
+</html>

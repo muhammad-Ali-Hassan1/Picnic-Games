@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color:rgba(110, 76, 50, 0.589);
+   /* background-image: url(/images/background.jpg); */
+   background-size: cover;
+   background-repeat: no-repeat;
+    height: auto;
+}
+/* Navbar */
+.navbar{
+    background-color: transparent;
+}
+/* #navbarSupportedContent{ */
+    /* margin-left: 600px; */
+/* } */
+
+/* Sign up form start */
+.my-div{
+    width: 100%;
+    height: 100vh;
+}
+.form-box {
+    width: 40%;
+    height: 60vh;
+    margin-right: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(104, 66, 37, 0.959);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.top {
+    width: 100%;
+    height: 80px;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.top span {
+    color: whitesmoke;
+    font-size: small;
+}
+
+.top span a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.top span a:hover {
+    color: sienna;
+}
+
+.top h1 {
+    color: white;
+    font-size: 36px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.form {
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid red; */
+    text-align: justify;
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 400px;
+    height: 50px;
+    font: 15px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: o 10px 0 45px;
+    background-color: rgba(104, 66, 37, 0.959);
+    color: white;
+    text-indent: 30px;
+    transition: all 2s ease;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+input:hover,
+input:focus {
+    background-color: rgba(120, 121, 156, 0.485);
+}
+
+input[type="submit"] {
+    width: 400px;
+    height: 45px;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(245, 245, 245, 0.768);
+    transition: all 2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(245, 245, 245, 0.242);
+}
+
+/* Sign up form end */
+
+/* Function validation */
+p {
+    color: red;
+    font-size: 12px;
+    margin-left: 40px;
+    /* margin-top: -80px; */
+}
+@media screen and (max-width:1199px){
+    .form-box {
+        width: 50%;
+        height: 70vh;
+    }
+}
+@media screen and (max-width:768px){
+    .form-box {
+        width: 60%;
+        height: 80vh;
+    }
+    .top h1 {
+        font-size: 28px;
+    }
+    input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 400px;
+    height: 50px;
+    font-size: 13px;
+}
+.form {
+    width: 100%;
+    height: 350px;
+    gap: 6px;
+}
+}
+@media screen and (max-width:576px){
+    .form-box {
+        width: 90%;
+        height: 80vh;
+    }
+    .top h1 {
+        font-size: 24px;
+    }
+    input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+input[type="submit"] {
+    font-size: 13px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.form {
+    width: 100%;
+    height: 350px;
+    gap: 4px;
+}
+}
+.nav-item .nav-link {
+    color: rgba(104, 66, 37, 0.959);
+    font-size: large;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.logo {
+    height: 80px;
+    width: 150px;
+    /* border: 2px solid black; */
+    background: url(images/PICNIC_GAMES-removebg-preview.png);
+    /* font-weight: 6000px; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(121, 81, 50, 0.253)">
+      <div class="container-fluid">
+          <div class="logo"></div>
+          <!-- <span class="logo"><img src="../images/PICNIC_GAMES-removebg-preview.png" alt=""></span> -->
+          <a class="navbar-brand" href=""> <br></a><br><br>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./about us.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="./contact us.html">Contact us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Games
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./outdoor games/males games.html">Male Games</a></li>
+                          <li><a class="dropdown-item" href="./outdoor games/female games.html">Females Games</a>
+                          </li>
+                          <li><a class="dropdown-item" href="./outdoor games/kids games.html games.html">Kids
+                                  Games</a></li>
+                          <li><a class="dropdown-item" href="./outdoor games/family games.html ">Family Games</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+    <!-- Sign up form start -->
+     <div class="container my-div d-flex justify-content-center align-items-center">
+    <div class="form-box row d-flex justify-content-center align-items-center">
+        <div class="top">
+            <span>Have you an account? <a href="login.html"> Login</a></span>
+            <h1>Sign Up</h1>
+        </div>
+        <div class="form">
+            <!-- <form action="index.html"> -->
+            <input type="text" placeholder="Username" id="username">
+            <p id="usererror"></p>
+            <input type="email" placeholder="Enter email here" id="email">
+            <p id="emailerror"></p>
+            <input type="password" placeholder="Password" id="password">
+            <p id="passworderror"></p>
+            <input type="submit" value="Sign Up" onclick="validation()"><br><br>
+            <!-- </form> -->
+        </div>
+    </div>
+</div>
+    <!-- sign up form end -->
+
+    <!-- Footer -->
+    <footer style="background-color: rgba(223, 199, 187, 0.87); color: #ecf0f1; padding: 40px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+          <!-- Navbar Links -->
+          <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+              <li><a href="#home" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Home</a></li>
+              <li><a href="#about" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">About</a></li>
+              <li><a href="#services" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Services</a></li>
+              <li><a href="#contact" style="color: rgba(104, 66, 37, 0.959); text-decoration: none; font-size: 16px;">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Email Subscription -->
+          <div style="margin-top: 20px;">
+            <input type="email" placeholder="Subscribe for updates..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
+            <button style="padding: 10px 15px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div style="margin-top: 20px;">
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" style="color: rgba(104, 66, 37, 0.959); font-size: 24px; margin: 0 10px; text-decoration: none;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+      
+          
+        </div>
+      </footer>
+  <!-- Footer end     -->
+    <script>
+     function validation(){
+    let name = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let emailregex = /\w+@[a-z]+\.[a-z]{2,4}[\.[a-z]+]?/
+    let passregex = /.{8,}/
+
+    if(name == "" || email == "" || password == ""){
+        // username error
+        if( name == ""){
+            document.getElementById("usererror").innerText ="Must Enter your username";
+        }
+        else{
+            document.getElementById("usererror").innerText ="";
+        }
+        // email error
+        if(email ==""){
+            document.getElementById("usererror").innerText ="Must Enter your email address";
+        }
+        else{
+            if(emailregex.test(email)){
+                document.getElementById("emailerror").innerText ="";
+            }
+            else{
+                document.getElementById("emailerror").innerText ="Please Enter your valid email address";
+            }
+        }
+        // password error
+        if(password == ""){
+            document.getElementById("passworderror").innerText ="Must Enter your password";
+        }
+        else{
+            if(passregex.test(password)){
+                document.getElementById("passworderror").innerText ="";
+            }
+            else{
+                document.getElementById("passworderror").innerText ="Password must be 8 or more characters";
+            }
+
+        }
+
+    }
+    else{
+        location.href = "index.html";
+    }
+    
+}
+    </script>
+
+</body>
+</html>
